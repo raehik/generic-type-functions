@@ -1,5 +1,5 @@
 name: generic-type-functions
-version: 0.0.0
+version: 0.1.0
 synopsis: Familiar functions lifted to type-level functions on generic types
 description: Please see README.md.
 extra-source-files:
