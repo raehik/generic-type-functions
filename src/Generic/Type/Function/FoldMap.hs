@@ -6,7 +6,9 @@ import DeFun.Core ( type (~>), type (@@) )
 import Data.Kind ( type Type )
 import GHC.Generics
 
--- | 'foldMap' on generic type representations.
+-- | 'foldMap' on generic type representations (field product level).
+--
+-- Will work for single-constructor types as well thanks to meta unwrapping.
 type GTFoldMapC
     :: (m ~> m ~> m) -- | type-level 'mappend' defun symbol
     -> m             -- | type-level 'mempty'

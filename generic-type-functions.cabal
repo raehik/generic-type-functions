@@ -26,8 +26,8 @@ source-repository head
 
 library
   exposed-modules:
+      Generic.Type.Example
       Generic.Type.Function.FoldMap
-      Generic.Type.Test
   other-modules:
       Paths_generic_type_functions
   hs-source-dirs:
