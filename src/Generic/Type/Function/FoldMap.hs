@@ -10,10 +10,10 @@ import GHC.Generics
 --
 -- Will work for single-constructor types as well thanks to meta unwrapping.
 type GTFoldMapC
-    :: (m ~> m ~> m) -- | type-level 'mappend' defun symbol
-    -> m             -- | type-level 'mempty'
-    -> (Type ~> m)   -- | base case defun symbol
-    -> (k -> Type)   -- | generic representation (field product level)
+    :: (m ~> m ~> m) -- ^ type-level 'mappend' defun symbol
+    -> m             -- ^ type-level 'mempty'
+    -> (Type ~> m)   -- ^ base case defun symbol
+    -> (k -> Type)   -- ^ generic representation (field product level)
     -> m
 type family GTFoldMapC tmappend tmempty f gf where
     GTFoldMapC tmappend tmempty f U1          = tmempty

@@ -56,3 +56,11 @@ dependencies:
 
 library:
   source-dirs: src
+
+tests:
+  spec:
+    source-dirs: test
+    main: Main.hs
+    dependencies:
+    - generic-type-functions
+    - type-spec ^>= 0.4.0.0
